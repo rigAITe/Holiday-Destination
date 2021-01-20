@@ -19,10 +19,13 @@
 }
 
 /* ----------------------- HEADER --------------------- */
-
+.testing{
+  padding-top: 10rem;
+  color: black;
+}
 .reveal{
   @include containerM();
-  // font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -43,11 +46,11 @@
   & h2{
     padding-top: 5vh;
     padding-bottom: 2vh;
-    // font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   & p{
     padding-bottom: 6vh;
-    // font-size: .875rem;
+    font-size: 1rem;
   }
   & h2 span{
     color: #FF725E ;

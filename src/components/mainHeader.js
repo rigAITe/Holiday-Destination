@@ -1,15 +1,15 @@
 import React from 'react'
 import Typical from 'react-typical'
 
-const Header = () => {
+const MainHeader = () => {
 
     return(
         
-        <div className="main-header">
+        // <div className="main-header">
             <div className="inner-header">
                 <div className="reveal">
                     <h2><Typical
-                        steps={[" ", 1000, "Let's Make Your Best Trip Ever, Don’t Listen to what they say, Go see", 3000]}
+                        steps={["Let's Make Your Best Trip Ever, Don’t Listen to what they say, Go see", 3000]}
                         loop={Infinity}
                         // wrapper="p"
                         /> 
@@ -22,10 +22,10 @@ const Header = () => {
                     <span>Scroll Down</span>
                 </div>
             </div>
-        </div>
+        // </div>
     )
 }
 
-export default Header
+export default MainHeader
 
 

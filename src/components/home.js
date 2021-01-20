@@ -1,11 +1,15 @@
 import React from 'react'
-import Header from './header'
+import MainHeader from './mainHeader'
+import Testing from './testing'
 
 const Home = () => {
 
     return(
         <div>
-            <Header/>
+            <MainHeader/>
+            <div className="testing">
+                <Testing/>
+            </div>
         </div>
     )
 }
