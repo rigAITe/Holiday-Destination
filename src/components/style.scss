@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Alegreya';
+  font-weight: 600;
+}
+
+@mixin containerM {
+  width: 90%;
+  margin: auto;
+}
+
+@mixin containerD {
+  width: 80%;
+  margin: auto;
+}
+
+/* ----------------------- HEADER --------------------- */
+
+.reveal{
+  @include containerM();
+  // font-size: 1rem;
+  text-align: center;
+}
+
+.main-header{
+  background: linear-gradient(#5f5e5ec7, transparent 80% ),  url('../images/Landing\ pic.jpg') no-repeat center/cover fixed ;
+  height: 100vh;
+  color: #ffffff;
+  // font-size: .875rem
+}
+
+.inner-header{
+  @include containerM();
+  padding-top: 5vh;
+}
+
+.sub-header{
+  padding-top: 6vh;
+  & h2{
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    // font-size: 1.3rem;
+  }
+  & p{
+    padding-bottom: 6vh;
+    // font-size: .875rem;
+  }
+  & h2 span{
+    color: #FF725E ;
+  }
+}
+
+
+@media (min-width: 576px) and  (max-width: 767px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .reveal{
+    display: flex;
+    width: 60%;
+    font-size: 1.3rem;
+  }
+
+  .sub-header{
+    & h2{
+      font-size: 1.7rem;
+    }
+    & p{
+      font-size: 1rem;
+    }
+  }
+}
+
+@media  (min-width: 1025px) and (max-width: 1440px){
+  .reveal{
+    font-size: 2rem;
+  }
+
+  .sub-header{
+    width: 50%;
+    padding-bottom: 2vh;
+    & h2{
+      font-size: 2.5rem;
+    }
+    & p{
+      font-size: 1.2rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+
