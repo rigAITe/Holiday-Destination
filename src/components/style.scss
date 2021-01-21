@@ -42,7 +42,7 @@
 }
 
 .sub-header{
-  padding-top: 6vh;
+  padding-top: 10vh;
   & h2{
     padding-top: 5vh;
     padding-bottom: 2vh;
@@ -64,7 +64,9 @@
 
 
 @media (min-width: 576px) and  (max-width: 767px) {
-
+  .sub-header{
+    padding-top: 6vh;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
