@@ -1,21 +1,19 @@
 import React from 'react'
 import Home from './components/home'
-import Service from './components/service'
-import About from './components/about'
-import Contact from './components/contact'
+import ContentOutline from './components/contentOutline'
+import TargetMarket from './components/targetMarket'
+// import Header from './header/header'
 import './components/style.scss'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Header from './header/header.js'
 const  App = () => {
   return (
     <Router>
         <div>
-        <Header/>
+        {/* <Header/> */}
         <Switch>
-          <Route path="/contact-us" component={Contact} />
-          <Route path='/about-us'  component={About} />
-          <Route path='/services' component = {Service}/>
+          <Route path="/target-market" component={TargetMarket} />
+          <Route path='/content-outline' component = {ContentOutline}/>
           <Route exact path='/'  component={Home} />
         </Switch>
       </div>

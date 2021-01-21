@@ -5,7 +5,7 @@ const MainHeader = () => {
 
     return(
         
-        <div className="main-header">
+        // <div className="main-header">
             <div className="inner-header">
                 <div className="reveal">
                     <h2><Typical
@@ -22,7 +22,7 @@ const MainHeader = () => {
                     <span>Scroll Down</span>
                 </div>
             </div>
-        </div>
+        // </div>
     )
 }
 

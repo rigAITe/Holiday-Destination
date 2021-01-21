@@ -10,7 +10,7 @@ const Header = () => {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   return (
-    <div className="header">
+    <div className="header fadeHeader">
       <div className="logo-nav">
         <div className="logo-container">
           <NavLink exact to='/'>
@@ -23,10 +23,10 @@ const Header = () => {
               <NavLink exact to='/' >Home</NavLink>
             </li>
             <li className="option" onClick={closeMobileMenu}>
-              <NavLink to='/services'>Target Market</NavLink>
+              <NavLink to='/target-market'>Target Market</NavLink>
             </li>
             <li className="option" onClick={closeMobileMenu}>
-              <NavLink to='/about-us' >Content Outline</NavLink>
+              <NavLink to='/content-outline' >Content Outline</NavLink>
             </li>
             
             {/* <li className="option" onClick={closeMobileMenu}>
