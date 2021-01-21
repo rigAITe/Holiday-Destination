@@ -25,8 +25,8 @@
 }
 .reveal{
   @include containerM();
-  font-size: 1.2rem;
-  // text-align: center;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 .main-header{
@@ -46,14 +46,14 @@
   & h2{
     padding-top: 5vh;
     padding-bottom: 2vh;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   & p{
     padding-bottom: 6vh;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   & h2 span{
-    color: #FF725E ;
+    color: #3F0886 ;
   }
 }
 
