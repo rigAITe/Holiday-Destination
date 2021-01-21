@@ -7,9 +7,6 @@ const Home = () => {
     return(
         <div>
             <MainHeader/>
-            <div className="testing">
-                <Testing/>
-            </div>
         </div>
     )
 }

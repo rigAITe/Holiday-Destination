@@ -10,14 +10,14 @@ import Header from './header/header.js'
 const  App = () => {
   return (
     <Router>
-        <div className="main-header">
-          <Header/>
-          <Switch>
-            <Route path="/contact-us" component={Contact} />
-            <Route path='/about-us'  component={About} />
-            <Route path='/services' component = {Service}/>
-            <Route exact path='/'  component={Home} />
-          </Switch>
+        <div>
+        <Header/>
+        <Switch>
+          <Route path="/contact-us" component={Contact} />
+          <Route path='/about-us'  component={About} />
+          <Route path='/services' component = {Service}/>
+          <Route exact path='/'  component={Home} />
+        </Switch>
       </div>
     </Router>
   )
