@@ -1,6 +1,7 @@
 import React from 'react'
 import MainHeader from './mainHeader'
 import Header from '../header/header'
+import WhoWeAre from '../components/whoarewe'
 
 
 const Home = () => {
@@ -13,6 +14,8 @@ const Home = () => {
                 </div>
                 <MainHeader/>
             </div>
+            <WhoWeAre/>
+
         </div>
     )
 }

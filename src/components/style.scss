@@ -43,7 +43,7 @@
 .sub-header{
   // display: flex;
   // flex-direction: column;
-  padding-top: 10vh;
+  padding-top: 6vh;
   & h2{
     padding-top: 5vh;
     padding-bottom: 2vh;
@@ -68,14 +68,47 @@
 }
 
 
-// @media (min-width: 576px) and  (max-width: 767px) {
-//   .sub-header{
-//     padding-top: 6vh;
-//     @include containerD
-//   }
-// }
+/* ----------------------- Who Are WE --------------------- */
+
+.aboutIntergr8{
+  @include containerM();
+  text-align: center;
+  padding-top: 2.375rem;
+  & p{
+    padding-bottom: 2rem;
+    padding-top: .5rem;
+  }
+  & h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  & img{
+    border: 2px solid #FF725E;
+    padding: .4rem;
+    border-radius: 50%;
+  }
+  & .aboutIntergr8-inner{
+    color: #666666;
+    font-weight: 400;
+  }
+}
+
+.headline{
+  background-color: #0000FF;
+  height: .2rem;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 1.3rem;
+}
+
+
 
 @media (min-width: 768px) and (max-width: 1024px){
+  
+  /* ----------------------- HEADER --------------------- */
+  
   .reveal{
     font-size: 1.3rem;
   }
@@ -94,9 +127,29 @@
     position: absolute;
     bottom: 0;
   }
+
+  /* ----------------------- Who Are WE --------------------- */
+
+  .services{
+    display: flex;
+    flex-wrap: wrap;
+    & >*{
+      flex: 1 1 200px;   
+      margin: .9rem; 
+    }
+  }
+
+  .headline{
+    width: 10%;
+  }
+
 }
 
 @media  (min-width: 1025px) and (max-width: 1440px){
+ 
+ /* ----------------------- HEADER --------------------- */
+
+ 
   .reveal{
     font-size: 2rem;
   }
@@ -116,12 +169,21 @@
     position: absolute;
     bottom: 0;
   }
+
+
+  /* ----------------------- Who Are WE --------------------- */
+
+
+  .services{
+    display: flex;
+    flex-wrap: wrap;
+    & >*{
+      flex: 1 1 10px;   
+      margin: .9rem; 
+    }
+  }
+
+  .headline{
+    width: 5%;
+  }
 }
-
-
-
-
-
-
-
-
