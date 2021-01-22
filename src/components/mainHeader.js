@@ -19,7 +19,7 @@ const MainHeader = () => {
                     <span>Intergr8 Presents</span>
                     <h2>Holiday Destinations with <span>John</span></h2>
                     <p>A travel tourism inclined company designed to explore beautiful hidden destination round the globe aiding her audience to create dynamic spectacular travel experiences. </p>
-                    <span>Scroll Down</span>
+                    <span className="scroll">Scroll Down</span>
                 </div>
             </div>
         // </div>

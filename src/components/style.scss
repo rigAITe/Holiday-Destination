@@ -41,8 +41,8 @@
 }
 
 .sub-header{
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   padding-top: 10vh;
   & h2{
     padding-top: 5vh;
@@ -50,7 +50,7 @@
     font-size: 1.8rem;
   }
   & p{
-    padding-bottom: 13vh;
+    // padding-bottom: 13vh;
     font-size: 1.3rem;
     font-style: normal;
     font-weight: normal;  
@@ -58,8 +58,15 @@
   & h2 span{
     color: #3F0886 ;
   }
-  & span{
+  & span,
+  .scroll{
     color: #d3cece;
+  }
+  & .scroll{
+    position: absolute;
+    bottom: 0;
+    // transform: translateY(200%);
+    // display: inline-block;
   }
 }
 
