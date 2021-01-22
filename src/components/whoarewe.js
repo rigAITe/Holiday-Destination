@@ -8,7 +8,7 @@ import Visa from '../images/visa.jpg'
 const WhoAreWe = () => {
 
     return(
-        <div className="aboutIntergr8">
+        <div className="aboutIntergr8" id='aboutIntergr8'>
             <div>
                 <h2>Who are we?</h2>
                 <div className="headline"></div>
