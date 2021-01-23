@@ -146,7 +146,7 @@
     & p{
       line-height: 2.4;
       font-weight: 400;
-      font-size: .875rem;
+      font-size: .9rem;
     }
   }
 }
@@ -219,6 +219,10 @@
 
   /* ----------------------- Who Are WE --------------------- */
 
+  .aboutIntergr8-inner{
+    font-size: 1.1rem;
+  }
+
   .services{
     display: flex;
     flex-wrap: wrap;
@@ -226,6 +230,9 @@
       flex: 1 1 200px;   
       margin: .9rem; 
     }
+    // & p{
+    //   font-size: 2rem;
+    // }
   }
 
   .headline{
@@ -240,7 +247,11 @@
   }
 
   .photo-overlay p{
-    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .photo-container p{
+    font-size: 1.2rem;
   }
 
 }
@@ -294,7 +305,7 @@
   /* -----------------------VisMis OVERLAY --------------------- */
 
   .photo-overlay p{
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .visMisBiz{
