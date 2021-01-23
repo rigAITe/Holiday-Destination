@@ -104,6 +104,94 @@
 }
 
 
+  /* -----------------------VisMis OVERLAY --------------------- */
+
+.content{
+  @include containerM();
+  text-align: center;
+}
+
+.photo-container {
+  img{
+    width: 100%;
+  }
+  & p{
+    padding-bottom: 1rem;
+  }
+}
+
+.photo{
+  position: relative;
+	line-height: 0;
+	margin-bottom: 2em;
+  overflow: hidden;
+
+  &-overlay{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1rem;
+
+    display: flex; /* For centering text inside .photo-overlay */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0, .5);
+    & p{
+      line-height: 2.4;
+      font-weight: 400;
+      font-size: .875rem;
+    }
+  }
+}
+
+.slide .photo-overlay {
+	opacity: 1;
+	background: #3F0886;
+}
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.photo-overlay {
+	opacity: 0;
+	transition: opacity .5s;
+}
+.photo-overlay:hover {
+	opacity: 1;
+}
+
+.slide .photo-overlay,
+.slide img {
+	transition: transform .6s ease-out;
+}
+
+.slide .photo-overlay {
+	transform: translateX(-100%);
+}
+
+.slide:hover .photo-overlay {
+	transform: translateX(0);
+}
+
+.slide:hover img {
+	transform: translateX(100%); 
+}
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
 
 @media (min-width: 768px) and (max-width: 1024px){
   
@@ -141,6 +229,17 @@
 
   .headline{
     width: 10%;
+  }
+
+  /* ----------------------- VisMis OVERLAY --------------------- */
+
+
+  .content{
+    width: 60%;
+  }
+
+  .photo-overlay p{
+    font-size: 1rem;
   }
 
 }
@@ -186,4 +285,21 @@
   .headline{
     width: 5%;
   }
+
+  /* -----------------------VisMis OVERLAY --------------------- */
+
+  .photo-overlay p{
+    font-size: 1rem;
+  }
+
+  .visMisBiz{
+    display: flex;
+    flex-wrap: wrap;
+    @include containerM();
+    & >*{
+      flex: 1 1 10px;   
+      margin: .9rem; 
+    }
+  }
 }
+
