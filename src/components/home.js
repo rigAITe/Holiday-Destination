@@ -3,6 +3,7 @@ import MainHeader from './mainHeader'
 import Header from '../header/header'
 import WhoWeAre from '../components/whoarewe'
 import OurVisMisF from '../components/ourVisMisF'
+import TargetMarketHome from '../components/targetMarketHome'
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
             <div className="visMisBiz">
                 <OurVisMisF/>
             </div>
+            {/* <TargetMarketHome/> */}
         </div>
     )
 }

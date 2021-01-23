@@ -176,7 +176,7 @@
 }
 
 .slide .photo-overlay {
-	transform: translateX(-100%);
+	transform: translateX(-70%);
 }
 
 .slide:hover .photo-overlay {
@@ -193,6 +193,17 @@
 	clear: both;
 }
 
+
+  /* ----------------------- Who Are WE --------------------- */
+
+  .targetMarkets{
+    display: flex;
+
+    & >*{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 
 @media (min-width: 768px) and (max-width: 1024px){
   
@@ -301,6 +312,10 @@
   .aboutIntergr8-inner{
     width: 80%;
     margin: auto;
+  }
+
+  .aboutIntergr8 p{
+    font-size: 1.1rem;
   }
   /* -----------------------VisMis OVERLAY --------------------- */
 
