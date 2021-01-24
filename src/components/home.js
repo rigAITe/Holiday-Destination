@@ -4,7 +4,7 @@ import Header from '../header/header'
 import WhoWeAre from '../components/whoarewe'
 import OurVisMisF from '../components/ourVisMisF'
 import TargetMarketHome from '../components/targetMarketHome'
-
+import SecondaryTarget from '../components/secondaryTarget'
 
 const Home = () => {
 
@@ -21,6 +21,7 @@ const Home = () => {
                 <OurVisMisF/>
             </div>
             <TargetMarketHome/>
+            <SecondaryTarget/>
         </div>
     )
 }

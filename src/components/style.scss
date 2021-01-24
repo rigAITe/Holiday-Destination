@@ -238,6 +238,49 @@
     } 
   }
 
+  /* ----------------------- Secondary Target --------------------- */
+
+  .secTagtHead{
+    @include containerM();
+    margin-top: 2rem;
+  }
+
+  .secondaryTarget{
+    @include containerM();
+    margin-top: 2rem;
+    & img{
+      width: 100%;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+    & p:nth-child(even){
+      color: #666666;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .headlines{
+    background-color: #0000FF;
+    height: .2rem;
+    width: 20%;
+    margin-bottom: 2rem;
+  }
+
+  .secondaryTarHeader{
+    color: #FF725E;
+    padding-bottom: 1rem;
+  }
+
+  .secButton{
+    background: #FF725E;
+    padding: .8rem;
+    color: #ffffff;
+    width: 50%;
+    text-align: center;
+  }
+
+
 @media (min-width: 768px) and (max-width: 1024px){
   
   /* ----------------------- HEADER --------------------- */
@@ -321,6 +364,25 @@
     }
     
   }
+
+
+  /* ----------------------- Secondary Target --------------------- */
+
+  .secondaryTarget{
+    & img{
+      width: 60%;
+    }
+    & p:nth-child(even){
+      font-size: 1.1rem;
+    }
+  } 
+
+  .secButton{
+    width: 30%;
+  }
+
+
+
 
 }
 
@@ -412,6 +474,41 @@
       }
     }
   }
+
+  /* ----------------------- Secondary Target --------------------- */
+
+  .secTagtHead{
+    @include containerD();
+    padding-top: 2rem;
+  }
+  .secondaryTarget{
+    @include containerD();
+    display: flex;
+    & img{
+      width: 80%;
+    }
+    & >*{
+      flex: 1 1 250px;   
+      margin: .9rem; 
+    }
+
+    & p:nth-child(even){
+      font-size: 1.1rem;
+    }
+  }
+
+  .secButton{
+    width: 30%;
+  }
+
+  .secondaryTarget{
+    & img{
+      width: 60%;
+    }
+    
+  } 
+
+
 }
 
 
