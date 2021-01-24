@@ -317,9 +317,6 @@
       flex: 1 1 200px;   
       margin: .9rem; 
     }
-    // & p{
-    //   font-size: 2rem;
-    // }
   }
 
   .headline{
@@ -372,7 +369,7 @@
     & img{
       width: 60%;
     }
-    & p:nth-child(even){
+    & p{
       font-size: 1.1rem;
     }
   } 
@@ -380,10 +377,6 @@
   .secButton{
     width: 30%;
   }
-
-
-
-
 }
 
 @media  (min-width: 1025px) and (max-width: 1440px){
@@ -492,7 +485,7 @@
       margin: .9rem; 
     }
 
-    & p:nth-child(even){
+    & p{
       font-size: 1.1rem;
     }
   }
