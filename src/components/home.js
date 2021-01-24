@@ -20,7 +20,7 @@ const Home = () => {
             <div className="visMisBiz">
                 <OurVisMisF/>
             </div>
-            {/* <TargetMarketHome/> */}
+            <TargetMarketHome/>
         </div>
     )
 }

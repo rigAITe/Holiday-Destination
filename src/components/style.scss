@@ -176,7 +176,7 @@
 }
 
 .slide .photo-overlay {
-	transform: translateX(-70%);
+	transform: translateX(+60%);
 }
 
 .slide:hover .photo-overlay {
@@ -184,7 +184,7 @@
 }
 
 .slide:hover img {
-	transform: translateX(100%); 
+	transform: translateX(-100%); 
 }
 
 .clearfix::after {
@@ -194,15 +194,45 @@
 }
 
 
-  /* ----------------------- Who Are WE --------------------- */
+  /* ----------------------- Target Market --------------------- */
 
   .targetMarkets{
-    display: flex;
-
-    & >*{
-      display: flex;
-      flex-wrap: wrap;
+    text-align: center;
+    margin-top: 2rem;
+    &-header{
+      @include containerM();
+      padding-bottom: 2rem;
+      & h2{
+        font-size: 1.5rem;
+      }
+      & p{
+        font-size: 1rem;
+        font-weight: 500;
+        color: #666666;
+      }
     }
+    &-inner{
+      @include containerM();
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+      &-main{
+        background: #ff725e26;
+      }
+      & >*{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background: #ffffff;
+        margin-bottom: 1rem;
+        font-size: .795rem;
+        padding: .4rem;
+        border-left: #ff725e solid 6px;
+        border-radius: .4rem;
+      }
+      & img{
+        padding-right: .5rem;
+      }
+    } 
   }
 
 @media (min-width: 768px) and (max-width: 1024px){
@@ -263,6 +293,30 @@
 
   .photo-container p{
     font-size: 1.2rem;
+  }
+
+  /* ----------------------- Target Market --------------------- */
+
+  .targetMarkets{
+    &-inner{
+      display: flex;
+      flex-wrap: wrap;
+      width: 95%;
+      margin: auto;
+      
+      // @include containerD();
+      & >*{
+        flex: 1 1 200px;   
+        margin: .9rem; 
+      }
+      & p{
+        font-size: .9rem;
+      }
+    }
+    &-last{
+      width: 30%;
+    }
+    
   }
 
 }
@@ -332,5 +386,29 @@
       margin: .9rem; 
     }
   }
+
+
+  /* ----------------------- Target Market --------------------- */
+
+  .targetMarkets{
+    &-header p{
+      font-size: 1.1rem;
+    }
+    &-inner{
+      display: flex;
+      flex-wrap: wrap;
+      // width: 95%;
+      // margin: auto;
+      @include containerD();
+      & >*{
+        flex: 1 1 250px;   
+        margin: .9rem; 
+      }
+      & p{
+        font-size: 1rem;
+      }
+    }
+  }
 }
+
 

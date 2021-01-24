@@ -1,39 +1,42 @@
 import React from 'react'
-import Airlines from '../images/airline.jpg'
-import Resort from '../images/resort.jpg'
-import Travel from '../images/travel.jpg'
-import Tourism from '../images/tourism.jpg'
-import Recreational from '../images/recreational.jpg'
+import Airlines from '../images/airline.svg'
+import Resort from '../images/resort.svg'
+import Travel from '../images/tour.svg'
+import Tourism from '../images/tourism.svg'
+import Recreational from '../images/recreational.svg'
 
 const TargetMarketHome = () => {
 
     return(
-        <div>
-            <div>
+        <div className="targetMarkets">
+            <div className="targetMarkets-header">
                 <h2>Target Market</h2>
                 <div className="headline"></div>
-                <p>To whom are we trying to sell ? Our primary target market includes:</p>
+                <p>To whom are we trying to sell?  Our primary target market includes:</p>
             </div>
-            <div className="targetMarkets">
-                <div>
-                    <div><img src={Airlines} alt=""/></div>
-                    <div><p>1.	Airlines</p></div>
-                </div>
-                <div>
-                    <div><img src={Resort} alt=""/></div>
-                    <div><p>2.	Hotel and Resort Centers</p></div>
-                </div>
-                <div>
-                    <div><img src={Travel} alt=""/></div>
-                    <div><p>3.	Travel tour guide companies</p></div>
-                </div>
-                <div>
-                    <div><img src={Tourism} alt=""/></div>
-                    <div><p>4.	Recreational Tourist agencies</p></div>
-                </div>
-                <div>
-                    <div><img src={Recreational} alt=""/></div>
-                    <div><p>5.	Ministry of Tourism</p></div>
+            <div className="targetMarkets-inner-main">
+                <div className="targetMarkets-inner">
+                    <div>
+                        <div><img src={Recreational} alt=""/></div>
+                        <div><p>1.	Ministry of Tourism</p></div>
+                    </div>
+                    <div>
+                        <div><img src={Resort} alt=""/></div>
+                        <div><p>2.	Hotel and Resort Centers</p></div>
+                    </div>
+                    <div>
+                        <div><img src={Travel} alt=""/></div>
+                        <div><p>3.	Travel tour guide companies</p></div>
+                    </div>
+                    <div>
+                        <div><img src={Airlines} alt=""/></div>
+                        <div><p>4.	Airlines</p></div>
+                    </div>
+                    <div>
+                        <div><img src={Tourism} alt=""/></div>
+                        <div><p>5.	Recreational Tourist agencies</p></div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
