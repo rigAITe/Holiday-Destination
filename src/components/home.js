@@ -5,6 +5,7 @@ import WhoWeAre from '../components/whoarewe'
 import OurVisMisF from '../components/ourVisMisF'
 import TargetMarketHome from '../components/targetMarketHome'
 import SecondaryTarget from '../components/secondaryTarget'
+import Footer from '../components/footer'
 
 const Home = () => {
 
@@ -22,6 +23,7 @@ const Home = () => {
             </div>
             <TargetMarketHome/>
             <SecondaryTarget/>
+            <Footer/>
         </div>
     )
 }

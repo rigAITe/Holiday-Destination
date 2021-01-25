@@ -176,7 +176,7 @@
 }
 
 .slide .photo-overlay {
-	transform: translateX(+60%);
+	transform: translateX(+70%);
 }
 
 .slide:hover .photo-overlay {
@@ -194,92 +194,119 @@
 }
 
 
-  /* ----------------------- Target Market --------------------- */
+/* ----------------------- Target Market --------------------- */
 
-  .targetMarkets{
-    text-align: center;
-    margin-top: 2rem;
-    &-header{
-      @include containerM();
-      padding-bottom: 2rem;
-      & h2{
-        font-size: 1.5rem;
-      }
-      & p{
-        font-size: 1rem;
-        font-weight: 500;
-        color: #666666;
-      }
-    }
-    &-inner{
-      @include containerM();
-      padding-top: 2rem;
-      padding-bottom: 1rem;
-      &-main{
-        background: #ff725e26;
-      }
-      & >*{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        background: #ffffff;
-        margin-bottom: 1rem;
-        font-size: .795rem;
-        padding: .4rem;
-        border-left: #ff725e solid 6px;
-        border-radius: .4rem;
-      }
-      & img{
-        padding-right: 1rem;
-      }
-      & p{
-        font-size: .9rem;
-      }
-    } 
-  }
-
-  /* ----------------------- Secondary Target --------------------- */
-
-  .secTagtHead{
+.targetMarkets{
+  text-align: center;
+  margin-top: 2rem;
+  &-header{
     @include containerM();
-    margin-top: 2rem;
-  }
-
-  .secondaryTarget{
-    @include containerM();
-    margin-top: 2rem;
-    & img{
-      width: 100%;
-      margin-bottom: 1rem;
-      margin-top: 1rem;
+    padding-bottom: 2rem;
+    & h2{
+      font-size: 1.5rem;
     }
-    & p:nth-child(even){
-      color: #666666;
+    & p{
+      font-size: 1rem;
       font-weight: 500;
-      margin-bottom: 2rem;
+      color: #666666;
     }
   }
+  &-inner{
+    @include containerM();
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    &-main{
+      background: #ff725e26;
+    }
+    & >*{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background: #ffffff;
+      margin-bottom: 1rem;
+      font-size: .795rem;
+      padding: .4rem;
+      border-left: #ff725e solid 6px;
+      border-radius: .4rem;
+    }
+    & img{
+      padding-right: 1rem;
+    }
+    & p{
+      font-size: .9rem;
+    }
+  } 
+}
 
-  .headlines{
-    background-color: #0000FF;
-    height: .2rem;
-    width: 20%;
+/* ----------------------- Secondary Target --------------------- */
+
+.secTagtHead{
+  @include containerM();
+  margin-top: 2rem;
+}
+
+.secondaryTarget{
+  @include containerM();
+  margin-top: 2rem;
+  & img{
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  & p:nth-child(even){
+    color: #666666;
+    font-weight: 500;
     margin-bottom: 2rem;
   }
+}
 
-  .secondaryTarHeader{
-    color: #FF725E;
+.headlines{
+  background-color: #0000FF;
+  height: .2rem;
+  width: 20%;
+  margin-bottom: 2rem;
+}
+
+.secondaryTarHeader{
+  color: #FF725E;
+  padding-bottom: 1rem;
+}
+
+.secButton{
+  background: #FF725E;
+  padding: .8rem;
+  color: #ffffff;
+  width: 50%;
+  text-align: center;
+}
+
+  /* ----------------------- FOOTER --------------------- */
+  
+footer{
+  margin-top: 5rem;
+  padding: 2rem 1rem;
+  background: linear-gradient(#5f5e5ec7, transparent 80% ),  url('../images/footer.jpg') no-repeat center/cover fixed ;
+  color: #ffffff;
+  & img{
+    padding-right: 1rem;
+  }
+  & >*{
+    padding-bottom: 2rem;
+  }
+  & p{
     padding-bottom: 1rem;
   }
+}
 
-  .secButton{
-    background: #FF725E;
-    padding: .8rem;
-    color: #ffffff;
-    width: 50%;
-    text-align: center;
+.footClass{
+  display: flex;
+}
+
+.social{
+  & img{
+    padding-bottom: 2rem;
   }
-
+}
 
 @media (min-width: 768px) and (max-width: 1024px){
   
@@ -500,6 +527,22 @@
     }
     
   } 
+
+
+  /* ----------------------- FOOTER --------------------- */
+
+  footer{
+    display: flex;
+    justify-content: space-between;
+    & div:first-child{
+      display: flex;
+    }
+    padding-bottom: 0;
+  }
+
+  .logoIcon{
+    padding-right: 2rem;
+  }
 
 
 }
