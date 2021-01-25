@@ -295,6 +295,7 @@ footer{
   }
   & p{
     padding-bottom: 1rem;
+    font-weight: 400;
   }
 }
 
@@ -482,8 +483,6 @@ footer{
     &-inner{
       display: flex;
       flex-wrap: wrap;
-      // width: 95%;
-      // margin: auto;
       @include containerD();
       & >*{
         flex: 1 1 250px;   
@@ -500,6 +499,9 @@ footer{
   .secTagtHead{
     @include containerD();
     padding-top: 2rem;
+    & .headlines{
+      width: 7%;
+    }
   }
   .secondaryTarget{
     @include containerD();
