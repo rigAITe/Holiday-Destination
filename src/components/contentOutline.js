@@ -5,7 +5,7 @@ import Header from '../header/header'
 const ContentOutline = () => {
 
     return(
-        <div>
+        <div className="content-outline">
             <div className="headerbg">
                 <Header/>
             </div>

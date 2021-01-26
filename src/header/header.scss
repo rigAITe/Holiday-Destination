@@ -1,7 +1,7 @@
 /*Desktop View*/
 
 .headerbg{
-  background: #b1b0b0;
+  // background: #b1b0b0;
 }
 
 .active{
@@ -17,7 +17,7 @@
   }
   li{
     a{
-      color: #ffffff;
+      color: #ffffff ;
       text-decoration: none;
     }
   }
@@ -84,8 +84,16 @@
   .mobile-menu {
     display: none;
   }
+
+  @media  (min-width: 1px) and (max-width: 768px){
+    .headerbg{
+      background: #b1b0b0;
+    }
+  }
+
   @media (max-width: 1024px) {
     /*Mobile View */
+    
     .header {
       padding: 0px 10px;
     }

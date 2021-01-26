@@ -310,6 +310,17 @@ footer{
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
+
+
+  /* ----------------------- Content Outline --------------------- */
+
+
+  // .content-outline{
+  //   background-image: url('../images/airplane.jpg');
+  //   background-repeat: no-repeat;
+  //   background-position: left center; 
+  //   background-color: #fd664436;
+  // }
   
   /* ----------------------- HEADER --------------------- */
   
@@ -407,7 +418,7 @@ footer{
   }
 }
 
-@media  (min-width: 1025px) and (max-width: 1440px){
+@media  (min-width: 1024px) and (max-width: 1440px){
  
  /* ----------------------- HEADER --------------------- */
 
@@ -529,6 +540,17 @@ footer{
     }
     
   } 
+
+
+  /* ----------------------- Content Outline --------------------- */
+
+
+  .content-outline{
+    background-image: url('../images/airplane.jpg');
+    background-repeat: no-repeat;
+    background-position: left center; 
+    background-color: #fd664436;
+  }
 
 
   /* ----------------------- FOOTER --------------------- */
