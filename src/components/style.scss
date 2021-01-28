@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@300;400;500;700&display=swap");
 
+.headerbg{
+  background: #ff715e3b;
+}
+
 .carousel-caption{
   display: block !important;
   color: #fff;
@@ -10,6 +14,10 @@
   background-image: url($img);
   background-repeat: no-repeat;
   background-position: left center; 
+}
+
+h2{
+  font-weight: 600;
 }
 
 * {
@@ -114,6 +122,9 @@
   margin-bottom: 1.3rem;
 }
 
+.services p{
+  font-weight: 600
+}
 
   /* -----------------------VisMis OVERLAY --------------------- */
 
@@ -129,6 +140,7 @@
   & p{
     padding-bottom: 1rem;
     font-size: 1rem;
+    font-weight: 600
   }
 }
 
@@ -207,7 +219,7 @@
 
 /* ----------------------- Target Market --------------------- */
 .targetMarket-Bg{
-  background: #ff715e3b;  
+  // background: #ff715e3b;  
 }
 
 .targetMarkets{
@@ -218,6 +230,7 @@
     padding-bottom: 2rem;
     & h2{
       font-size: 1.5rem;
+      font-weight: 600;
     }
     & p{
       font-size: 1rem;
@@ -269,7 +282,7 @@
   } 
   & p{
     color: #666666;
-    font-weight: 500;
+    font-weight: 600;
   }
   & p:nth-child(even){
     color: #666666;
@@ -332,7 +345,7 @@
 }
 
 .content-container{
-  background: #ff715e3b;  
+  // background: #ff715e3b;  
   & h2{
     font-size: 1.5em !important;
     margin-bottom: 0rem;
@@ -393,6 +406,10 @@ footer{
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
+
+  .headerbg{
+    background: #ff715e3b;
+  }
   
   /* ----------------------- HEADER --------------------- */
   
@@ -501,6 +518,10 @@ footer{
 }
 
 @media  (min-width: 1024px) and (max-width: 1439px){
+
+  .headerbg{
+    background: none;
+  }
  
  /* ----------------------- HEADER --------------------- */
  
