@@ -1,6 +1,8 @@
 import React from 'react'
 import Travelers from '../images/travelers.svg'
 import { NavLink } from 'react-router-dom'
+import Fade from 'react-reveal/Fade';
+
 
 
 
@@ -19,10 +21,12 @@ const SecondaryTarget = () => {
                 </div>
                 <div>
                     <h2 className='secondaryTarHeader'>Why those Customers?</h2>
-                    <p>The travel and tourism enterprise are a well know lucrative sector which cuts across various works of life. It is built up of a supply chain management which involves the aviation sector, hospitality sector and even recreation. All arms come together to work and meet a certain target which is rendering RELAXATION SERVICES.</p>
-                    <div className="secButton">
-                        <NavLink to='/target-market'>Read More</NavLink>
-                    </div>
+                    <Fade left>                    
+                        <p>The travel and tourism enterprise are a well know lucrative sector which cuts across various works of life. It is built up of a supply chain management which involves the aviation sector, hospitality sector and even recreation. All arms come together to work and meet a certain target which is rendering RELAXATION SERVICES.</p>
+                        <div className="secButton">
+                            <NavLink to='/target-market'>Read More</NavLink>
+                        </div>
+                    </Fade>
                 </div>
             </div>
         </div>

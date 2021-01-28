@@ -4,6 +4,9 @@ import Facebook from '../images/facebookIcon2.svg'
 import Instagram from '../images/instagramIcon2.svg'
 import Twitter from '../images/twitterIcon2.svg'
 import Youtube from '../images/youtubeIcon2.svg'
+import Fade from 'react-reveal/Fade';
+
+
 
 
 const ContentOutline = () => {
@@ -21,33 +24,51 @@ const ContentOutline = () => {
                         <p className="content-outline-list-header">We envisioned an avenue wherein we get to:</p>
                     </div>
                     <div className="content-outline-list" >
-                        <div>
-                            <p>	Explore the transport system of visiting countries from the airport to the bus/cab down to hotel reservation and touring round.</p>
-                        </div>
-                        <div>
-                            <p>Explore culture diversities and traditional environment.</p>
-                        </div>
-                        <div>
-                            <p>	Explore food creativity and diversities as well as hospitality ethics exercised in various countries, respectively.</p>
-                        </div>
-                        <div>
-                            <p>	Explore local languages.</p>
-                        </div>
-                        <div>
-                            <p> Explore seasonal weather and time zones of various regions, sunset, sunrise.</p>
-                        </div>
-                        <div>
-                            <p>	Explore structured institutions known for tourist attractions such as malls, museums, archives, libraries, etc.</p>
-                        </div>
-                        <div>
-                            <p> Explore recreational avenues; boat cruise, surfing, site seeing etc.</p>
-                        </div>
-                        <div>
-                            <p> Explore historical citadels.</p>
-                        </div>
-                        <div>
-                            <p> Explore local markets, enterprise diversities, etc.</p>
-                        </div>
+                        <Fade right> 
+                            <div>
+                                <p>	Explore the transport system of visiting countries from the airport to the bus/cab down to hotel reservation and touring round.</p>
+                            </div>
+                        </Fade> 
+                        <Fade right> 
+                            <div>
+                                <p>Explore culture diversities and traditional environment.</p>
+                            </div>
+                        </Fade> 
+                        <Fade right> 
+                            <div>
+                                <p>	Explore food creativity and diversities as well as hospitality ethics exercised in various countries, respectively.</p>
+                            </div>
+                        </Fade> 
+                        <Fade right> 
+                            <div>
+                                <p>	Explore local languages.</p>
+                            </div>
+                        </Fade> 
+                        <Fade right>             
+                            <div>
+                                <p> Explore seasonal weather and time zones of various regions, sunset, sunrise.</p>
+                            </div>
+                        </Fade> 
+                        <Fade right> 
+                            <div>
+                                <p>	Explore structured institutions known for tourist attractions such as malls, museums, archives, libraries, etc.</p>
+                            </div>
+                        </Fade> 
+                        <Fade right> 
+                            <div>
+                                <p> Explore recreational avenues; boat cruise, surfing, site seeing etc.</p>
+                            </div>
+                        </Fade> 
+                        <Fade right> 
+                            <div>
+                                <p> Explore historical citadels.</p>
+                            </div>
+                        </Fade>                        
+                        <Fade right> 
+                            <div>
+                                <p> Explore local markets, enterprise diversities, etc.</p>
+                            </div>
+                        </Fade> 
                     </div>
                 </div>
             </div>
