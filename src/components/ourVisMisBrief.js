@@ -7,7 +7,7 @@ const VisMis = ({ data : { title, content, image, alt } }) => {
 
             <div className='photo-container'>
                 <p>{title}</p>
-                <div className="photo slide">
+                <div className="photo slides">
                     <img src={image} alt={alt}/>
                     <div className="photo-overlay">
                         <p>{content}</p>

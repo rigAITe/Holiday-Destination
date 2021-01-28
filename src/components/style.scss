@@ -1,11 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@300;400;500;700&display=swap");
 
+.carousel-caption{
+  display: block !important;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.529);
+}
+
+@mixin bg($img:null) {
+  background-image: url($img);
+  background-repeat: no-repeat;
+  background-position: left center; 
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Alegreya';
-  font-weight: 600;
 }
 
 @mixin containerM {
@@ -151,7 +162,7 @@
   }
 }
 
-.slide .photo-overlay {
+.slides .photo-overlay {
 	opacity: 1;
 	background: #3F0886;
 }
@@ -170,20 +181,20 @@
 	opacity: 1;
 }
 
-.slide .photo-overlay,
-.slide img {
+.slides .photo-overlay,
+.slides img {
 	transition: transform .6s ease-out;
 }
 
-.slide .photo-overlay {
+.slides .photo-overlay {
 	transform: translateX(+70%);
 }
 
-.slide:hover .photo-overlay {
+.slides:hover .photo-overlay {
 	transform: translateX(0);
 }
 
-.slide:hover img {
+.slides:hover img {
 	transform: translateX(-100%); 
 }
 
@@ -252,11 +263,18 @@
     width: 100%;
     margin-bottom: 1rem;
     margin-top: 1rem;
+  } 
+  & p{
+    color: #666666;
+    font-weight: 500;
   }
   & p:nth-child(even){
     color: #666666;
     font-weight: 500;
     margin-bottom: 2rem;
+  }
+  & span {
+    font-weight: bold;
   }
 }
 
@@ -285,7 +303,7 @@
 .content-outline{
 
   &-list-header{
-    padding-top: 1rem;
+    padding-top: .8rem;
     padding-bottom: 2rem;
   }
   &-list >*{
@@ -295,10 +313,13 @@
     padding: 1rem;
   }
   &-inner {
-    padding-top: 1rem;  
+    // padding-top: 1rem;  
     @include containerM();
     & p{
       font-weight: 400;
+    }
+    & .headlines{
+      margin-bottom: 1rem;
     }
   }
   
@@ -306,6 +327,14 @@
 
 .content-container{
   background: #ff715e3b;  
+  & h2{
+    font-size: 1.5em !important;
+    margin-bottom: 0rem;
+    font-weight: 600;
+  }
+  & p{
+    margin-bottom: 0;
+  }
 
   & .social {
     padding-top: 3rem;
@@ -442,12 +471,11 @@ footer{
   /* ----------------------- Secondary Target --------------------- */
 
   .secondaryTarget{
+    
     & img{
       width: 60%;
     }
-    & p{
-      font-size: 1.1rem;
-    }
+    
   } 
 
   .secButton{
@@ -571,36 +599,22 @@ footer{
       flex: 1 1 250px;   
       margin: .9rem; 
     }
-
-    & p{
-      font-size: 1.1rem;
-    }
   }
 
   .secButton{
     width: 30%;
   }
 
-  .secondaryTarget{
-    & img{
-      width: 60%;
-    }
-    
-  } 
-
-
   /* ----------------------- Content Outline --------------------- */
 
   .content{
     &-outline{
-      background-image: url('../images/airplane.jpg');
-      background-repeat: no-repeat;
-      background-position: left center; 
+      @include bg('../images/airplane.jpg');
 
       &-inner{
         padding-left: 45%;
         & p{
-          font-size: 1.1rem;
+          font-size: 1.1rem !important;
         }
       }
     }
@@ -621,6 +635,22 @@ footer{
   .logoIcon{
     padding-right: 2rem;
   }
+
+
+  /* ----------------------- TARGET MARKET --------------------- */
+
+
+  .targetMarket{
+    @include bg('../images/map.jpg');
+    &-inner{
+      padding-left: 45%;
+      // margin-right: 3rem;
+    }
+    &-Bg{
+      background: #ff715e3b;  
+    }
+  }
 }
+  
 
 

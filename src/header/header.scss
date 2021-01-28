@@ -46,6 +46,7 @@
     grid-template-columns: repeat(4, auto);
     grid-gap: 50px;
     list-style-type: none; 
+    margin-bottom: 0;
   }
 
   .mobile-option {
@@ -133,7 +134,7 @@
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
-      z-index: 1;
+      z-index: 16;
       align-content: center;
       padding-left: 0px;
     }
