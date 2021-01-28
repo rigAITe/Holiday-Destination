@@ -206,6 +206,9 @@
 
 
 /* ----------------------- Target Market --------------------- */
+.targetMarket-Bg{
+  background: #ff715e3b;  
+}
 
 .targetMarkets{
   text-align: center;
@@ -291,6 +294,9 @@
 }
 
 .secButton{
+  & a{
+    color: #fff;
+  }
   background: #FF725E;
   padding: .8rem;
   color: #ffffff;
@@ -646,9 +652,7 @@ footer{
       padding-left: 45%;
       // margin-right: 3rem;
     }
-    &-Bg{
-      background: #ff715e3b;  
-    }
+    
   }
 }
   

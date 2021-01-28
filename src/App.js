@@ -2,6 +2,7 @@ import React from 'react'
 import Home from './components/home'
 import ContentOutline from './components/contentOutline'
 import TargetMarket from './components/targetMarket'
+import ScrollToTop from './components/scrollTop'
 // import Header from './header/header'
 import './components/style.scss'
 
@@ -11,6 +12,7 @@ const  App = () => {
     <Router>
         <div>
         {/* <Header/> */}
+        <ScrollToTop />
         <Switch>
           <Route path="/target-market" component={TargetMarket} />
           <Route path='/content-outline' component = {ContentOutline}/>

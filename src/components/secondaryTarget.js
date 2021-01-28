@@ -1,5 +1,7 @@
 import React from 'react'
 import Travelers from '../images/travelers.svg'
+import { NavLink } from 'react-router-dom'
+
 
 
 const SecondaryTarget = () => {
@@ -19,7 +21,7 @@ const SecondaryTarget = () => {
                     <h2 className='secondaryTarHeader'>Why those Customers?</h2>
                     <p>The travel and tourism enterprise are a well know lucrative sector which cuts across various works of life. It is built up of a supply chain management which involves the aviation sector, hospitality sector and even recreation. All arms come together to work and meet a certain target which is rendering RELAXATION SERVICES.</p>
                     <div className="secButton">
-                        Read More
+                        <NavLink to='/target-market'>Read More</NavLink>
                     </div>
                 </div>
             </div>
