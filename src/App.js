@@ -6,9 +6,12 @@ import ScrollToTop from './components/scrollTop'
 // import Header from './header/header'
 import './components/style.scss'
 
+
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 const  App = () => {
   return (
+    
     <Router>
         <div>
         {/* <Header/> */}
