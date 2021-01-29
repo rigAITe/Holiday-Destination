@@ -47,7 +47,7 @@ const TargetMarketHome = () => {
                             <div><img src={Tourism} alt=""/></div>
                             <div><p>	Ministry of Tourism</p></div>
                         </div>
-                    </Fade>                    
+                    </Fade>
                 </div>
             </div>
         </div>

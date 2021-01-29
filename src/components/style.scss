@@ -270,6 +270,9 @@ h2{
 .secTagtHead{
   @include containerM();
   margin-top: 2rem;
+  & h2{
+    font-size: 1.5rem;
+  }
 }
 
 .secondaryTarget{
@@ -282,12 +285,14 @@ h2{
   } 
   & p{
     color: #666666;
-    font-weight: 600;
   }
   & p:nth-child(even){
     color: #666666;
     font-weight: 500;
     margin-bottom: 2rem;
+  }
+  & p:first-child{
+    font-weight: 600;
   }
   & span {
     font-weight: bold;
@@ -392,6 +397,9 @@ footer{
   & p{
     padding-bottom: 1rem;
     font-weight: 400;
+  }
+  & h3{
+    font-size: 1.3rem;
   }
 }
 
@@ -596,9 +604,10 @@ footer{
     &-inner{
       display: flex;
       flex-wrap: wrap;
-      @include containerD();
+      justify-content: center;
       & >*{
-        flex: 1 1 250px;   
+        flex: 1 1 300px;   
+        max-width: 300px;
         margin: .9rem; 
       }
       & p{
