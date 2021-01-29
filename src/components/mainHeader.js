@@ -10,7 +10,7 @@ const MainHeader = () => {
             <div className="inner-header">
                 <div className="reveal">
                     <h2><Typical
-                        steps={["Let's Make Your Best Trip Ever", 1000,' Don’t Listen to what they say, Go see ', 3000]}
+                        steps={[" ", 1000,"Let's Make Your Best Trip Ever", 3000]}
                         loop={Infinity}
                         // wrapper="p"
                         /> 
