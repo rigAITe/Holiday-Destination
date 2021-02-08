@@ -8,9 +8,9 @@ import Fade from 'react-reveal/Fade';
 const OurVisMisF = () => {
     const points = ourMisVisData.map( data => 
         <Fade left>
-        <div>
-            <VisMis data={data}/>
-        </div>
+            <div>
+                <VisMis data={data}/>
+            </div>
         </Fade>
 
     )

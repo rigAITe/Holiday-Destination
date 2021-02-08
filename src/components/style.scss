@@ -71,7 +71,8 @@ h2{
   & p{
     font-size: 1.1rem;
     font-style: normal;
-    font-weight: normal;  
+    font-weight: 600;  
+
   }
   & h2 span{
     color: #3F0886 ;
@@ -386,7 +387,7 @@ h2{
 footer{
   margin-top: 5rem;
   padding: 2rem 1rem;
-  background: linear-gradient(#5f5e5ec7, transparent 80% ),  url('../images/footer.jpg') no-repeat center/cover fixed ;
+  background: linear-gradient(#5f5e5ec7, transparent 100% ),  url('../images/footer.jpg') no-repeat center/cover fixed ;
   color: #ffffff;
   & img{
     padding-right: 1rem;
@@ -410,6 +411,69 @@ footer{
 .social{
   & img{
     padding-bottom: 2rem;
+  }
+
+  & p:last-child{
+    // color: #000;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+}
+
+
+/* -----------------------  FORM ------------------- */
+.contact{
+  margin-top:2rem;
+  margin-bottom: 5rem;
+  & h2{
+    @include containerM()
+  }
+}
+
+iframe{
+  width: 100%;
+}
+
+.form{
+  @include containerM();
+  background-color: #3F0886;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: .6rem;
+  margin-bottom: 4rem ;
+  & h2{
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #FF725E;
+    padding-bottom: 2rem;
+    margin-left: 0;
+  }
+}
+
+input, textarea{
+  width: 100%;
+  background-color: #d5e8eb;
+  outline: none;
+  border-radius: 4px;
+  padding: .4rem .4rem;
+  margin-bottom: 1rem !important ;
+  border: none;
+  // font-size: ;
+}
+
+form { 
+  & button{
+    padding: .4rem .6rem;
+    border-radius: 5px;
+    border: 2px solid #FF725E;
+    background-color: #ffffff;
+    color:#FF725E;
+    font-weight: bold;
+    &:hover{
+      color: #ffffff;
+      background-color: #FF725E;
+      outline: none;
+    }
   }
 }
 
@@ -670,6 +734,27 @@ footer{
 
   .logoIcon{
     padding-right: 2rem;
+  }
+
+  /* ----------------------- FORM ------------------ */
+
+  .form{
+    width: 40%;
+    margin: 0;
+    margin-right: 10rem;
+  }
+
+  .contact{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    @include containerD();
+    margin-top:2rem;
+    margin-bottom: 5rem;
+  }
+
+  iframe{
+    width: 150%;
   }
 
 
