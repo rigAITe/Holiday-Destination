@@ -335,7 +335,7 @@ h2{
     padding: 1rem;
   }
   &-inner {
-    // padding-top: 1rem;  
+    padding-top: 2rem;  
     @include containerM();
     & p{
       font-weight: 400;
@@ -496,7 +496,7 @@ form {
       text-align: center;
       & h2{
         font-size: 1.5rem;
-        // padding-top: 2rem;
+        padding-top: 2rem;
         // margin: auto;
         // width: 100%; 
         text-align: center;
@@ -786,6 +786,9 @@ form {
         & p{
           font-size: 1.1rem !important;
         }
+        & h2{
+          padding-top: 0;
+        }
       }
     }
   }
@@ -826,9 +829,18 @@ form {
   /* ----------------------- DESTINATIONS --------------------- */
 
   .destinations{
-    &-map img{
-      width: 80%;
+    &-map{
+      & img{
+        width: 80%;
+      }
     }
+    & h2{
+      padding-top: 0;
+    }
+  }
+
+  .headline{
+    margin-bottom: 2rem;
   }
 }
   
