@@ -426,6 +426,11 @@ footer{
     @include containerM();
     font-size: 1.8rem ;
   }
+  &-head{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    @include containerM();
+  }
 }
 
 iframe{
@@ -647,6 +652,14 @@ form {
     }
   }
 
+
+
+  .contact{
+    &-head{
+      @include containerD();
+    }
+  }
+
 }
 
 @media  (min-width: 1024px) and (max-width: 1439px){
@@ -780,9 +793,9 @@ form {
   .content{
     &-outline{
       @include bg('../images/airplane.jpg');
-
       &-inner{
         padding-left: 45%;
+        padding-top: 0;
         & p{
           font-size: 1.1rem !important;
         }
@@ -823,7 +836,13 @@ form {
     & > * {
       margin: .9rem
     }
-  }
+    &-head{
+      font-size: 2rem;
+      padding-top: 1rem;
+      padding-left: .9rem;
+      @include containerM();
+    }
+}
 
 
   /* ----------------------- DESTINATIONS --------------------- */

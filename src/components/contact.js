@@ -9,8 +9,8 @@ const Contact = () => {
             <div className="headerbg">
                 <Header/>
             </div>
+            <h2 className="contact-head">Subscribe to our News Letter</h2>
             <div className="contact">
-                {/* <h2>Subscribe to our News Letter</h2> */}
                 <div className='form'>
                     <h2>Contact Form</h2>
                     <form action="https://usebasin.com/f/54de9033c28b" method="POST" >
