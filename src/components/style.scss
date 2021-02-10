@@ -219,9 +219,6 @@ h2{
 
 
 /* ----------------------- Target Market --------------------- */
-.targetMarket-Bg{
-  // background: #ff715e3b;  
-}
 
 .targetMarkets{
   text-align: center;
@@ -246,7 +243,7 @@ h2{
     &-main{
       background: #ff725e26;
     }
-    & >*{
+    & > *{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -426,7 +423,8 @@ footer{
   margin-top:2rem;
   margin-bottom: 5rem;
   & h2{
-    @include containerM()
+    @include containerM();
+    font-size: 1.8rem ;
   }
 }
 
@@ -461,6 +459,11 @@ input, textarea{
   // font-size: ;
 }
 
+textarea{
+  height: 8rem;
+  max-height: 8rem;
+}
+
 form { 
   & button{
     padding: .4rem .6rem;
@@ -476,6 +479,46 @@ form {
     }
   }
 }
+
+/* -----------------------  DESTINATION ------------------- */
+
+  .destinations{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    & img{
+      width: 100%;
+    }
+
+    &-map{
+      @include containerM();
+      flex-grow: 1;
+      text-align: center;
+      & h2{
+        font-size: 1.5rem;
+        // padding-top: 2rem;
+        // margin: auto;
+        // width: 100%; 
+        text-align: center;
+      }
+    }
+
+    & .social{
+      text-align: center;
+      margin-top: 3rem;
+      & p{
+        color: #FF725E;
+        margin-bottom: 0;
+      }
+    }
+    & .footClass{
+      justify-content: center;
+      & > *{
+        margin: .6rem;
+      }
+    }
+  }
+
 
 @media (min-width: 768px) and (max-width: 1023px){
 
@@ -587,6 +630,23 @@ form {
       }
     }
   }
+
+  .form{
+    width: 80%;
+  }
+
+  .contact h2{
+    width: 80%;
+  }
+
+  /* ----------------------- Destinations --------------------- */
+
+  .destinations{
+    &-map img{
+      width: 80%;
+    }
+  }
+
 }
 
 @media  (min-width: 1024px) and (max-width: 1439px){
@@ -646,6 +706,7 @@ form {
 
   .photo-overlay p{
     font-size: 1.1rem;
+    line-height: 2rem;
   }
 
   .visMisBiz{
@@ -678,6 +739,15 @@ form {
         font-size: 1rem;
       }
     }
+  }
+
+  
+  .targetMarket{
+    @include bg('../images/map.jpg');
+    &-inner{
+      padding-left: 45%;
+    }
+    
   }
 
   /* ----------------------- Secondary Target --------------------- */
@@ -738,36 +808,27 @@ form {
 
   /* ----------------------- FORM ------------------ */
 
-  .form{
-    width: 40%;
-    margin: 0;
-    margin-right: 10rem;
+  .map{
+    @include containerM();
   }
+// }
 
   .contact{
+    @include containerM();
     display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    @include containerD();
-    margin-top:2rem;
-    margin-bottom: 5rem;
-  }
-
-  iframe{
-    width: 150%;
-  }
-
-
-  /* ----------------------- TARGET MARKET --------------------- */
-
-
-  .targetMarket{
-    @include bg('../images/map.jpg');
-    &-inner{
-      padding-left: 45%;
-      // margin-right: 3rem;
+    justify-content: space-between;
+    & > * {
+      margin: .9rem
     }
-    
+  }
+
+
+  /* ----------------------- DESTINATIONS --------------------- */
+
+  .destinations{
+    &-map img{
+      width: 80%;
+    }
   }
 }
   

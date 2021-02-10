@@ -13,7 +13,7 @@ const TargetMarket = () => {
     return(
         <div className="targetMarket-Bg">
             <div className="targetMarket">
-                <div className="headerbg ">
+                <div className="headerbg">
                     <Header/>
                 </div>
                 <div className="targetMarket-inner">

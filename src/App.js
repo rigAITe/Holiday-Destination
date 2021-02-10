@@ -4,7 +4,7 @@ import ContentOutline from './components/contentOutline'
 import TargetMarket from './components/targetMarket'
 import ScrollToTop from './components/scrollTop'
 import Contact from './components/contact'
-// import Header from './header/header'
+import Destinations from './components/destinations'
 import './components/style.scss'
 
 
@@ -18,6 +18,7 @@ const  App = () => {
         {/* <Header/> */}
         <ScrollToTop />
         <Switch>
+          <Route path="/destinations" component={Destinations} />
           <Route path="/contact-us" component={Contact} />
           <Route path="/target-market" component={TargetMarket} />
           <Route path='/content-outline' component = {ContentOutline}/>

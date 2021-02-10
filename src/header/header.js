@@ -29,7 +29,7 @@ const Header = () => {
               <NavLink to='/content-outline' >Content Outline</NavLink>
             </li>
             <li className="option" onClick={closeMobileMenu}>
-              <NavLink to='/destination'>Destinations</NavLink>
+              <NavLink to='/destinations'>Destinations</NavLink>
             </li>
             <li className="option" onClick={closeMobileMenu}>
               <NavLink to='/contact-us'>Contact Us</NavLink>
