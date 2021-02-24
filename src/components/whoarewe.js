@@ -5,6 +5,7 @@ import Holiday from '../images/holiday.jpg'
 import Hotel from '../images/hotel.jpg'
 import Visa from '../images/visa.jpg'
 import Bounce from 'react-reveal/Bounce';
+import { NavLink } from 'react-router-dom'
 
 
 const WhoAreWe = () => {
@@ -18,22 +19,28 @@ const WhoAreWe = () => {
             </div>
                 <div className="services">
                     <Bounce bottom>
-                        <div>
-                            <img src={Visa} alt="Visa Pic"/>
-                            <p>Visa Application</p>
-                        </div>
+                        <NavLink to="/visa-application">
+                            <div>
+                                <img src={Visa} alt="Visa Pic"/>
+                                <p>Visa Application</p>
+                            </div>
+                        </NavLink>
                     </Bounce>
                     <Bounce bottom>
-                        <div>
-                            <img src={Booking} alt="Booking Pic"/>
-                            <p>Booking Ticket</p>
-                        </div>
+                        <NavLink to="/booking-ticket">
+                            <div>
+                                <img src={Booking} alt="Booking Pic"/>
+                                <p>Booking Ticket</p>
+                            </div>
+                        </NavLink>
                     </Bounce>
                     <Bounce bottom>
-                        <div>
-                            <img src={Hotel} alt="Hotel Pic"/>
-                            <p>Hotel Reservation</p>
-                        </div>
+                        <NavLink to="/hotel-reservation">
+                            <div>
+                                <img src={Hotel} alt="Hotel Pic"/>
+                                <p>Hotel Reservation</p>
+                            </div>
+                        </NavLink>
                     </Bounce>
                     <Bounce bottom>
                         <div>
