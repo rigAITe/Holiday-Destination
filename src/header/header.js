@@ -20,7 +20,7 @@ const Header = () => {
         <div>
           <ul className={click ? "nav-options active" : "nav-options"}>
             <li className="option" onClick={closeMobileMenu}>
-              <NavLink exact to='/' >Home</NavLink>
+              <NavLink exact to='/' >Homeeeee</NavLink>
             </li>
             <li className="option" onClick={closeMobileMenu}>
               <NavLink to='/target-market'>Target Market</NavLink>
